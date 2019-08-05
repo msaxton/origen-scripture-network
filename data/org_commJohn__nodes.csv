@@ -1,0 +1,394 @@
+Id,Label
+1,Exod. 14
+2,Gen. 17
+3,Act. 3
+4,Jes. 61
+5,Exod. 32
+6,Joh. 11
+7,Exod. 12
+8,Mark. 5
+9,Gen. 11
+10,Exod. 8
+11,I Kor. 9
+12,Jes. 66
+13,Luk. 4
+14,Jos. 22
+15,Num. 14
+16,Matth. 22
+17,Matth. 19
+18,Joh. 19
+19,Act. 7
+20,Exod. 33
+21,Kol. 1
+22,Gen. 25
+23,I Joh. 2
+24,Job. 11
+25,II Tim. 3
+26,Deut. 16
+27,II Tim. 4
+28,Gal. 2
+29,Jes. 25
+30,I Kön. 18
+31,Job. 9
+32,Num. 23
+33,Exod. 22
+34,II Kön. 2
+35,Joh. 21
+36,Jud. 3
+37,Joh. 9
+38,Mark. 8
+39,Gen 4
+40,Dan. 7
+41,Luk. 1
+42,Eph. 5
+43,Deut. 18
+44,Job. 18
+45,"Joh, 4"
+46,Luk. 3
+47,Job. 13
+48,Luk. 11
+49,Matth. 28
+50,Eph. 1
+51,Exod. 6
+52,Joh 10
+53,Joh 1
+54,Hebr. 1
+55,Eph. 6
+56,I Tim. 6
+57,Hebr. 3
+58,Luk. 15
+59,Rom. 11
+60,II Petr. 1
+61,Act. 22
+62,Luk. 20
+63,Matth. 13
+64,Act. 9
+65,I Kor. 36
+66,Prov. 15
+67,Gen. 32
+68,Ezech. 1
+69,Hebr. 6
+70,I Petr. 1
+71,Joh. 10
+72,"Joh, 11"
+73,Matth. 2
+74,Job. 8
+75,I Joh. 5
+76,II Chron. 18
+77,Lev. 5
+78,Lev. 19
+79,Joh. 13
+80,Hebr. 5
+81,Joh. 25
+82,I Kor 5
+83,Num. 22
+84,Lev. 23
+85,I Kor. 13
+86,Jes. 48
+87,Mark. 11
+88,Rom. 8
+89,Mark. 10
+90,Luk. 5
+91,Dan. 12
+92,Jos. 3
+93,Rom. 15
+94,Exod. 2
+95,II Kön. 4
+96,Matth. 11
+97,Eph. 2
+98,I Kor. 6
+99,Luk. 17
+100,Rom. 116
+101,Joh. 6
+102,Gen. 4
+103,Matth. 5
+104,Mark. 1
+105,Rom. 7
+106,Gen. 29
+107,I Kor. 8
+108,Luk. 2
+109,Matth. 6
+110,Exod. 16
+111,Jes. 6
+112,Prov. 9
+113,I Tim. 3
+114,Ezech. 29
+115,Luk. 9
+116,Hebr. 12
+117,Gen. 45
+118,Job. 22
+119,Num. 3
+120,I Kor. 18
+121,Luk. 18
+122,Joh 8
+123,Gen 19
+124,Jes. 2
+125,Prov. 6
+126,I Kön. 8
+127,Hebr. 9
+128,Gen. 47
+129,Gen. 12
+130,Gen. 49
+131,Jes. 14
+132,Lev. 27
+133,I Petr. 2
+134,Joh. 8
+135,Job. 12
+136,Gal. 5
+137,Jos. 4
+138,Mark. 3
+139,Joh. 4
+140,I Tim. 4
+141,Job. 7
+142,I Petr. 3
+143,Matth. 17
+144,Matth. 9
+145,Matth. 1
+146,Num. 33
+147,Gen. 30
+148,Rom. 14
+149,Luk. 13
+150,Deut. 4
+151,Prov. 4
+152,Joh. 3
+153,Matth. 10
+154,Matth. 14
+155,Jerem. 27
+156,Exod. 34
+157,Jes. 53
+158,Gen. 19
+159,Job. 3
+160,Matth. 7
+161,Matth. 25
+162,Rom. 6
+163,Num. 28
+164,Exod. 40
+165,Act. 1
+166,Jos. 5
+167,Rom. 9
+168,Num. 6
+169,"I Kor, 4"
+170,Job. 15
+171,I Kor. 3
+172,Exod. 3
+173,Gen. 3
+174,Jes. 26
+175,Job. 21
+176,Jos. 12
+177,Jes. 40
+178,Luk. 16
+179,Joh. 14
+180,Jes. 1
+181,Jes. 60
+182,I Kor. 32
+183,Job. 16
+184,I Sam. 19
+185,Juda 21
+186,Num. 18
+187,Phil. 1
+188,Jes. 63
+189,Jes 53
+190,Jes. 54
+191,Joh 20
+192,Act. 2
+193,Job. 6
+194,Luk. 21
+195,Matth. 26
+196,Matth/ 7
+197,Matth. 16
+198,Jes. 11
+199,Job. 14
+200,I Kön. 2
+201,Kol. 2
+202,Prov. 26
+203,Jes. 29
+204,Lev. 2
+205,I Joh. 1
+206,Eph. 4
+207,Job. 20
+208,Joh 14
+209,Act. 19
+210,Rom. 10
+211,Matth. 21
+212,Jes. 5
+213,Dan. 8
+214,II Tim. 2
+215,Gen. 7
+216,"Dan, 8"
+217,Num. 24
+218,Deut. 32
+219,Lev. 6
+220,Kol. 3
+221,Act. 17
+222,Matth. 27
+223,Matth. 12
+224,Mark. 6
+225,Deut. 27
+226,Luk. 6
+227,Num. 15
+228,I Kor. 11
+229,I Kor. 15
+230,Jerem. 5
+231,I Kor. 12
+232,Matth. 23
+233,Mark. 7
+234,Tit. 3
+235,Num. 16
+236,Deut. 30
+237,Jes. 51
+238,Act. 21
+239,Luk. 8
+240,Job. 4
+241,Jes. 52
+242,Joh. 18
+243,Act. 4
+244,Matth. 18
+245,Matth. 4
+246,Gen. 43
+247,II Tim. 8
+248,Joh. 15
+249,Mark 14
+250,I Sam. 17
+251,Luk. 14
+252,Matth. 3
+253,Gen. 5
+254,Gen. 18
+255,Jos. 13
+256,Act. 8
+257,I Sam. 16
+258,Gen. 2
+259,Rom. 12
+260,II Petr. 2
+261,Mark. 15
+262,Prov. 10
+263,Gal. 3
+264,Joh. 16
+265,Jerem. 15
+266,I Kön. 22
+267,Matth. 15
+268,I Sam. 28
+269,I Kor. 10
+270,Eph. 3
+271,Eph. 8
+272,II Tim. 1
+273,Luk. 24
+274,Mark. 9
+275,I Chron. 9
+276,I Kor. 1
+277,Luk. 12
+278,Lev. 22
+279,Jes. 22
+280,Job. 5
+281,Exod. 4
+282,Luk. 23
+283,Jes. 62
+284,I Tim. 2
+285,I Chron. 28
+286,Num. 5
+287,Hebr. 7
+288,II Sam. 5
+289,Gen. 1
+290,Gen. 24
+291,Jes. 65
+292,Jes. 35
+293,I Kor. 2
+294,Joh. 1
+295,II Kön. 1
+296,Matth 8
+297,"Phil, 2"
+298,Jes. 49
+299,Prov. 27
+300,Exod. 1
+301,Joh. 17
+302,Joh 2
+303,Joh 4
+304,Deut. 2
+305,Hebr. 13
+306,Matth. 24
+307,Hebr. 2
+308,Jes. 43
+309,Gen. 15
+310,Joh. 12
+311,Joh. 847
+312,Joh. 2
+313,Exod. 15
+314,Jes. 42
+315,Prov. 24
+316,Jes. 9
+317,Gen. 27
+318,"Matth, 26"
+319,Prov. 1
+320,Mark. 12
+321,Exod. 10
+322,I Kor. 5
+323,Act. 20
+324,Hebr. 8
+325,Lev. 3
+326,Prov. 3
+327,Jerem. 38
+328,Deut. 9
+329,I Tim. 5
+330,"Job, 3"
+331,Gal. 1
+332,Phil. 2
+333,Gen. 41
+334,Act. 5
+335,Num. 25
+336,Act. 16
+337,Joh. 20
+338,Gen. 9
+339,II Sam. 16
+340,Job. 2
+341,Job. 19
+342,"Joh, 13"
+343,Tit. 2
+344,Exod. 19
+345,Joh. 7
+346,Hebr. 11
+347,I Tim. 1
+348,Hebr. 4
+349,Luk. 22
+350,Mark. 2
+351,Rom. 2
+352,Hebr. 10
+353,I Kön. 13
+354,I Kor. 7
+355,Mark. 16
+356,Act. 13
+357,Luk. 7
+358,Joh 13
+359,Exod. 17
+360,Mark. 4
+361,Gal. 4
+362,Joh. 5
+363,Luk. 19
+364,Mark. 14
+365,I Sam. 6
+366,Jes. 30
+367,Gen. 6
+368,Deut. 6
+369,Rom. 3
+370,Rom. 5
+371,II Sam. 7
+372,Job. 10
+373,Exod. 29
+374,Deut. 33
+375,Jes. 58
+376,I Kor. 4
+377,Lev. 26
+378,Matth. 8
+379,Exod. 25
+380,Phil. 4
+381,Prov. 16
+382,Prov. 8
+383,Phil. 3
+384,Rom. 1
+385,Luk 12
+386,Job. 1
+387,Gal. 6
+388,Gen. 46
+389,I Kor. 14
+390,Ezech. 6
+391,Rom. 16
+392,Luk. 10
+393,Prov. 20
