@@ -2,9 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import itertools
-import pandas as pd
 
-def find_citations(url, auth_name, text_name):
+def find_citations(url):
 
     # reference abbreviations
     abbrs = {'Gen': 'Gen', 'Exod': 'Exod', 'Lev': 'Lev', 'Num': 'Num', 'Deut': 'Deut', 'Jos': 'Josh', 'Jud': 'Judg',
@@ -42,27 +41,26 @@ def find_citations(url, auth_name, text_name):
 
     master_list = list(set(master_list))  # get only unique values
 
+    # create nodes list
+    nodes = [dict.fromkeys(['id', 'label']) for d in range(len(master_list))]
+    i = 1
+    for d, ref in zip(nodes, master_list):
+        d['id'] = i
+        d['label'] = ref
+        i += 1
+
+
     id2label = {}
     label2id = {}
     i = 1
     for ref in master_list:
         id2label[i] = ref
         label2id[ref] = i
-        i+=1
-
-    # Create csv files
-
-    file_name = auth_name + '_' + text_name + '_'
-
-    nodes_df = pd.DataFrame.from_dict(id2label, orient='index')
-    nodes_df['Id'] = nodes_df.index
-    nodes_df = nodes_df.rename(columns={0: 'Label'})
-    nodes_df = nodes_df[['Id', 'Label']]
-    nodes_df.to_csv(file_name + '_nodes.csv', index=False)
+        i += 1
 
     relations_id_lists = []
     for list_ in relation_lists:
-        if len(list_) > 1:  #ignore lists with 0 or 1 items
+        if len(list_) > 1:  # ignore lists with 0 or 1 items
             id_list = []
             for ref in list_:
                 id_ = label2id[ref]
@@ -75,12 +73,24 @@ def find_citations(url, auth_name, text_name):
         for t in l:
             edges_list.append(t)
 
-    data = list(set(edges_list))
-    edges_df = pd.DataFrame(data, columns=['Source', 'Target'])
-    edges_df.to_csv(file_name + '_edges.csv', index=False)
+    edges_set = list(set(edges_list))
+
+    # create edges list
+    edges = [dict.fromkeys(['source', 'target']) for d in range(len(edges_set))]
+    i =1
+    for d, edge in zip(edges, edges_set):
+        d['source'] = edge[0]
+        d['target'] = edge[1]
+        i += 1
+
+    data = dict.fromkeys(['nodes', 'edges'])
+    data['nodes'] = nodes
+    data['edges'] = edges
+
+    # still need to add output!!!!
 
 if __name__ == '__main__':
     url = 'https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2042/tlg016/tlg2042.tlg016.opp-grc1.xml'
     auth_name = 'org'
     text_name = 'homLuke'
-    find_citations(url=url, auth_name=auth_name, text_name=text_name)
+    find_citations(url=url)
