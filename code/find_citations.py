@@ -94,7 +94,7 @@ def find_citations(urls, title):
 
 
 if __name__ == '__main__':
-    urls = ['https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2042/tlg009/tlg2042.tlg009.opp-grc1.xml'
+    urls = ['https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2042/tlg009/tlg2042.tlg009.opp-grc1.xml',
             'https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2042/tlg021/tlg2042.tlg021.opp-grc1.xml']
     title = 'HomJer'
 
