@@ -2,8 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import itertools
+import json
 
-def find_citations(url):
+def find_citations(urls, title):
 
     # reference abbreviations
     abbrs = {'Gen': 'Gen', 'Exod': 'Exod', 'Lev': 'Lev', 'Num': 'Num', 'Deut': 'Deut', 'Jos': 'Josh', 'Jud': 'Judg',
@@ -30,14 +31,15 @@ def find_citations(url):
     master_list = []  # list of all references
     relation_lists = []  # list of relation lists
 
-    response = requests.get(url)
-    xml = response.text
-    soup = BeautifulSoup(xml, 'xml')
-    notes = soup.find_all('note')
-    for note in notes:
-        refs = re.findall(re_pattern, note.text)
-        master_list.extend(refs)
-        relation_lists.append(refs)
+    for url in urls:
+        response = requests.get(url)
+        xml = response.text
+        soup = BeautifulSoup(xml, 'xml')
+        notes = soup.find_all('note')
+        for note in notes:
+            refs = re.findall(re_pattern, note.text)
+            master_list.extend(refs)
+            relation_lists.append(refs)
 
     master_list = list(set(master_list))  # get only unique values
 
@@ -87,10 +89,13 @@ def find_citations(url):
     data['nodes'] = nodes
     data['edges'] = edges
 
-    # still need to add output!!!!
+    with open('data/' + title + '.json', 'w') as fp:
+        json.dump(data, fp)
+
 
 if __name__ == '__main__':
-    url = 'https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2042/tlg016/tlg2042.tlg016.opp-grc1.xml'
-    auth_name = 'org'
-    text_name = 'homLuke'
-    find_citations(url=url)
+    urls = ['https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2042/tlg009/tlg2042.tlg009.opp-grc1.xml'
+            'https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2042/tlg021/tlg2042.tlg021.opp-grc1.xml']
+    title = 'HomJer'
+
+    find_citations(urls=urls, title=title)
